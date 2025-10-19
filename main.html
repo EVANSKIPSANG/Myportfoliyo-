@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evans Kipsang | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Evans Kipsang</h1>
-    <p>Mathematics & Computer Science Graduate | ICT Trainer | Web Developer</p>
-    <nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Evans<span>Kipsang</span></div>
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="hamburger" id="hamburger">☰</div>
   </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="your-photo.jpg" alt="Evans Kipsang" class="profile-photo">
+      <h1>Hi, I'm <span>Evans Kipsang</span></h1>
+      <p>Bachelor’s Degree in Mathematics & Computer Science | ICT Trainer | Web Developer | Data Analyst | Innovator</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I am a dedicated and detail-oriented graduate from Kirinyaga University with a Bachelor's Degree in Mathematics and Computer Science.
-      I have practical experience from my attachment at Chepsirei Technical College.
-      I am passionate about ICT training, web development, and creating digital solutions for learning.
+      I am a passionate and analytical Mathematics and Computer Science graduate from Kirinyaga University with a keen interest in leveraging technology to solve real-world problems. 
+      Through my attachment at Chepsirei Technical College, I have gained practical experience in ICT training, system development, and student resource management.
+      My goal is to blend mathematical reasoning with computational thinking to create intelligent and efficient systems that make learning and data-driven decisions easier.
+    </p>
+    <p>
+      I’m deeply motivated by innovation, problem-solving, and lifelong learning. Whether I’m developing web applications, visualizing data, or training students on digital skills, I strive to bring clarity, efficiency, and creativity to every project.
     </p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript, PHP, MySQL</li>
-      <li>Data Analysis (Excel, SPSS)</li>
-      <li>ICT Training and Computer Literacy</li>
+    <h2>Technical & Professional Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><strong>Programming:</strong> HTML, CSS, JavaScript, PHP, Python, C, Java</div>
+      <div class="skill"><strong>Database:</strong> MySQL, SQLite, MongoDB (basics)</div>
+      <div class="skill"><strong>Web Development:</strong> Responsive Design, UI/UX, REST APIs, CMS Integration</div>
+      <div class="skill"><strong>Mathematics:</strong> Statistics, Calculus, Linear Algebra, Numerical Analysis</div>
+      <div class="skill"><strong>Data Analysis:</strong> Excel, SPSS, Power BI, Pandas, Data Visualization</div>
+      <div class="skill"><strong>Networking & Systems:</strong> LAN/WAN setup, Network Security, Computer Maintenance</div>
+      <div class="skill"><strong>AI & Machine Learning (Basic):</strong> Python Libraries, Model Training, Data Cleaning</div>
+      <div class="skill"><strong>Soft Skills:</strong> Leadership, Communication, Team Collaboration, Problem Solving, Adaptability</div>
+      <div class="skill"><strong>ICT Training:</strong> Digital Literacy, Online Tools, Computer Packages Instruction</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Online Learning Platform</h3>
+        <p>Developed a full-featured e-learning system with resource upload, student login, and progress tracking using PHP and MySQL.</p>
+      </div>
+      <div class="project">
+        <h3>Resource Management System</h3>
+        <p>Created a dynamic platform for managing educational resources and enabling easy access to academic materials.</p>
+      </div>
+      <div class="project">
+        <h3>Student Result Analysis Tool</h3>
+        <p>Built an Excel-based and Python-supported tool to compute grades, generate performance graphs, and identify student trends.</p>
+      </div>
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>Designed and developed a responsive portfolio website to showcase my professional journey, skills, and projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <h2>Achievements & Interests</h2>
+    <ul class="achievements-list">
+      <li>🏆 Best Project Presentation Award - Kirinyaga University Final Year Exhibition (2024)</li>
+      <li>💡 Conducted Digital Skills Training for students at Chepsirei Technical College</li>
+      <li>📘 Completed several online courses in Web Development, Data Analytics, and Machine Learning</li>
+      <li>🔍 Member of the University Coding Club & ICT Society</li>
+      <li>🌍 Interested in Artificial Intelligence, Data Science, and EdTech Systems</li>
     </ul>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Online Learning Platform</h3>
-      <p>Developed an interactive platform for students to access notes, upload assignments, and track progress.</p>
-    </div>
-
-    <div class="project">
-      <h3>Resource Management System</h3>
-      <p>Created a system to manage digital resources such as PDFs and Word files using PHP and MySQL.</p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:evansrotich269@gmail.com">evansrotich269@gmail.com</a></p>
+    <p>📞 +254 768 551 090</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/evans-rotich-761616363/" target="_blank">LinkedIn Profile</a></p>
+    <a href="mailto:evansrotich269@gmail.com" class="btn">Hire Me</a>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:evansrotich269@gmail.com">evansrotich269@gmail.com</a></p>
-    <p>Phone: <a href="tel:+254768551090">+254 768 551 090</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/evans-rotich-761616363/" target="_blank">View Profile</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Evans Kipsang. All Rights Reserved.</p>
+    <p>© 2025 Evans Kipsang | Designed with 💙 and passion for technology</p>
   </footer>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+
 </body>
 </html>
