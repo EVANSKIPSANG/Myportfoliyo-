@@ -1,53 +1,106 @@
+/* ========== GLOBAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* ========== BODY STYLING ========== */
 body {
-  background: #f8f9fc;
+  background: linear-gradient(135deg, #004080, #001f3f);
   color: #333;
   line-height: 1.6;
 }
 
+/* ========== HEADER ========== */
 header {
-  background: #004080;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #e0e0e0;
+}
+
+header nav {
+  margin-top: 1rem;
 }
 
 header nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 0 1rem;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 header nav a:hover {
   color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
 }
 
+/* ========== SECTION STYLING ========== */
 .section {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .section h2 {
   color: #004080;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #004080;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-footer {
+.section p,
+.section li {
+  color: #333;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ========== SKILLS ========== */
+#skills ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#skills li {
   background: #004080;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.4rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
+
+#skills li:hover {
+  transform: scale(1.05);
+  background: #ffcc00;
+  color: #004080;
+}
+
+/* ========== PROJECTS ========== */
+.project {
+  background: #f1f4f8;
+  border-left: 5px solid #004080
