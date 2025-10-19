@@ -1,8 +1,9 @@
 :root {
-  --bg-color: #eef2f7;
-  --hero-bg: linear-gradient(135deg, #004080, #007bff);
-  --btn-color: #ffd700;
+  --bg-color: #e8f0fe; /* Soft light blue */
+  --hero-bg: linear-gradient(135deg, #0056b3, #00aaff); /* Deep-to-light blue */
+  --btn-color: #007bff; /* Vibrant blue for buttons */
 }
+
 
 * {
   margin: 0;
